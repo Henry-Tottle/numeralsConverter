@@ -1,6 +1,7 @@
 const numberBox = document.querySelector('#number')
 const convertButton = document.querySelector('button')
 const outputDiv = document.querySelector('#display')
+const yourEntry = document.querySelector('#outputP')
 
 
 const numeral = {'4' : ['M','MM','MMM'],
@@ -9,12 +10,9 @@ const numeral = {'4' : ['M','MM','MMM'],
                             '1': ['I','II','III','IV','V','VI','VII','VIII','IX']}
 
 const displayNumber = () => {
-    const yourEntry = document.createElement('p')
     let value = (numberBox.value).toString()
-    console.log(value.length)
     let conversionArray = []
     let outputArray = []
-    let output
     const numeralConstructor = () => {
         let count = value.length
         conversionArray.forEach((digit) => {
