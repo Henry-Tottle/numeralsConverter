@@ -15,6 +15,7 @@ body {
 }
 
 .typed {
+    font-family: 'serif';
     overflow: hidden;
     white-space: nowrap;
     width: 0;
